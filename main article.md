@@ -847,8 +847,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
-  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="Malware Detection Event" style="max-width: 70%; border-radius: 4px; margin-top: 16px;" />
-</div>
+<img src="Threat Detection with GuardDuty/Malware Event.png" alt="GuardDuty finding example" width="700">
 
 
 
