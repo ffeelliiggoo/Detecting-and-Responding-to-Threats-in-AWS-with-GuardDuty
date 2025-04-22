@@ -822,7 +822,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p>This hands-on test shows how GuardDuty adds another layer of protection by automatically monitoring for malicious files stored in your cloud environment.</p>
 
-  <img src="Threat Detection with GuardDuty/Malware protection.png" alt="Malware Protection Overview" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
+  <img src="Threat Detection with GuardDuty/Malware protection.png" alt="Malware Protection Overview" style="max-width: 70%; border-radius: 4px; margin: 16px 0;" />
 
   <h4>🔧 Enable Malware Protection</h4>
   <p>Enable Malware Protection for S3 in GuardDuty for your web app's S3 bucket.</p>
@@ -846,12 +846,12 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
-  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="Malware Detection Event" style="max-width: 100%; border-radius: 4px; margin-top: 16px;" />
+  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="Malware Detection Event" style="max-width: 70%; border-radius: 4px; margin-top: 16px;" />
 </div>
 
 
 
-<div style="width: 100%; text-align: center; border-bottom: 1px solid #ccc; line-height: 0.1em; margin: 40px 0 20px;">
+<div style="width: 70%; text-align: center; border-bottom: 1px solid #ccc; line-height: 0.1em; margin: 40px 0 20px;">
   <span style="background:#fff; padding:0 10px;">🚨 Step #5</span>
 </div>
 
