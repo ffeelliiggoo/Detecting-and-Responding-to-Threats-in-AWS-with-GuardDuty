@@ -75,7 +75,7 @@ Throughout this project, the importance of the principle of least privilege, con
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/web deployment process.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/web deployment process.png" alt="alt text" width="700">
   </div>
 </div>
 
