@@ -777,7 +777,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 #### Here we can verify that the GuardDuty dashboard has picked up on 2 High findings from the same source.
 
 
-  <img src="Threat Detection with GuardDuty/Threat Detection with GuardDuty/GuardDuty Findings-2.png" alt="GuardDuty Alert Screenshot" style="max-width: 100%; border-radius: 4px; margin-bottom: 16px;" />
+  <img src="Threat Detection with GuardDuty/GuardDuty Findings-2.png" alt="GuardDuty Alert Screenshot" style="max-width: 100%; border-radius: 4px; margin-bottom: 16px;" />
 
   <h3>🛡️ GuardDuty Finding: EC2 Credential Misuse</h3>
   <p>GuardDuty successfully detected that the EC2 instance role <code>vulnerablewebapp-TheRole-6yiHfFZ30fjZ</code> was used by another AWS account—proof that our credential exfiltration attack worked.</p>
