@@ -673,7 +673,7 @@ You should see what's inside the credentials.json file, which are the credential
   <p><strong>💡 Why create a new profile?</strong><br>
   In this case, we’re setting up a new profile named <code>stolen</code> using credentials extracted from the vulnerable web app. This simulates how an attacker might use exposed credentials from another environment.</p>
 
-  <img src="Threat Detection with GuardDuty/configure CLI profile.png" alt="Configure CLI Profile" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
+  <img src="Threat Detection with GuardDuty/configure CLI profile.png" alt="Configure CLI Profile" style="max-width: 120%; border-radius: 4px; margin: 16px 0;" />
 
   <p>Use the commands below to configure the profile:</p>
 
