@@ -822,7 +822,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p>This hands-on test shows how GuardDuty adds another layer of protection by automatically monitoring for malicious files stored in your cloud environment.</p>
 
- <img src="Threat Detection with GuardDuty/Malware protection.png" alt="GuardDuty finding example" width="600">
+ <img src="Threat Detection with GuardDuty/Malware protection.png" alt="GuardDuty finding example" width="400">
 
 
   <h4>🔧 Enable Malware Protection</h4>
@@ -835,7 +835,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   - Before <strong>June 11, 2025</strong>: Free for all accounts until June 15, 2025.<br>
   - After <strong>June 11, 2025</strong>: Free only for accounts less than 12 months old. Otherwise, charges may apply.</p>
 
-  <img src="Threat Detection with GuardDuty/Enabled malware protection-1.png" alt="GuardDuty finding example" width="900">
+  <img src="Threat Detection with GuardDuty/Enabled malware protection-1.png" alt="GuardDuty finding example" width="800">
 
   <h4>📥 Upload Malware File</h4>
   <p>To verify that Malware Protection is working, upload the following test file to your S3 bucket:</p>
@@ -847,7 +847,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
-  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="GuardDuty finding example" width="700">
+  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="GuardDuty finding example" width="800">
 
 
 
@@ -873,7 +873,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p>This hands-on test shows how GuardDuty adds another layer of protection by automatically monitoring for malicious files stored in your cloud environment.</p>
 
-<img src="Threat Detection with GuardDuty/Malware protection.png" alt="GuardDuty finding example" width="500">
+<img src="Threat Detection with GuardDuty/Malware protection.png" alt="GuardDuty finding example" width="400">
 
 
   <h4>🔧 Enable Malware Protection</h4>
