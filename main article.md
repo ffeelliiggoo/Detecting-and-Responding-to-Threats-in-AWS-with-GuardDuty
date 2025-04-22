@@ -349,7 +349,7 @@ Yup, you guessed it. You're the web app host, since you're the one that deployed
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="arbitrary code execution.png" alt="alt text" width="800">
+    <img src="Threat Detection with GuardDuty/arbitrary code execution.png" alt="alt text" width="800">
   </div>
 </div>
 
