@@ -718,7 +718,7 @@ aws configure set profile.stolen.aws_session_token $(cat credentials.json | jq -
   <p>📄 You should see a line that reads:<br>
   <em>"Dang it - if you can see this text, you're accessing our private information!"</em></p>
 
-<img src="Threat Detection with GuardDuty/final move.png" alt="GuardDuty finding example" width="600">
+<img src="Threat Detection with GuardDuty/final move.png" alt="GuardDuty finding example" width="900">
 
 
 
@@ -847,7 +847,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
-  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="GuardDuty finding example" width="800">
+  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="GuardDuty finding example" width="900">
 
 
 
@@ -886,7 +886,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   - Before <strong>June 11, 2025</strong>: Free for all accounts until June 15, 2025.<br>
   - After <strong>June 11, 2025</strong>: Free only for accounts less than 12 months old. Otherwise, charges may apply.</p>
 
-<img src="Threat Detection with GuardDuty/Enabled malware protection-1.png" alt="GuardDuty finding example" width="800">
+<img src="Threat Detection with GuardDuty/Enabled malware protection-1.png" alt="GuardDuty finding example" width="900">
 
 
   <h4>📥 Upload Malware File</h4>
@@ -899,7 +899,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
-<img src="Threat Detection with GuardDuty/Malware Event.png" alt="GuardDuty finding example" width="800">
+<img src="Threat Detection with GuardDuty/Malware Event.png" alt="GuardDuty finding example" width="900">
 
 
 
