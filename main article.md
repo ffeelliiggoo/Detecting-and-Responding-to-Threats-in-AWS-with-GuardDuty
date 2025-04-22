@@ -75,7 +75,7 @@ Throughout this project, the importance of the principle of least privilege, con
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/web deployment process.png" alt="alt text" width="400">
+    <img src="Threat Detection with GuardDuty/web deployment process.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -96,7 +96,7 @@ There are 5 items in the Parameters section.
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="parameters-1.png" alt="alt text" width="400">
+    <img src="Threat Detection with GuardDuty/parameters-1.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -107,7 +107,7 @@ Under Stack failure options, both settings are Activated.
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="stack failure.png" alt="alt text" width="400">
+    <img src="Threat Detection with GuardDuty/stack failure.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -119,7 +119,7 @@ Under Stack failure options, both settings are Activated.
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="site output-1.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/site output-1.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -142,7 +142,7 @@ Once we're done deploying it, it's going to look like this:
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Juice Shop deployed in AWS - architecture view.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/Juice Shop deployed in AWS - architecture view.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -167,7 +167,7 @@ Let's learn how they work together to make up a web app.
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="site architecture.png" alt="alt text" width="400">
+    <img src="Threat Detection with GuardDuty/site architecture.png" alt="alt text" width="700">
   </div>
 </div>
 
@@ -237,7 +237,7 @@ Your stack's status should say CREATE_COMPLETE now
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="create_complete.png" alt="alt text" width="400">
+    <img src="Threat Detection with GuardDuty/create_complete.png" alt="alt text" width="600">
   </div>
 </div>
 
