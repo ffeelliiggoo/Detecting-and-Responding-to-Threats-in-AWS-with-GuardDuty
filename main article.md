@@ -9,6 +9,8 @@
   <img src="GuardDuty Findings-1.png" alt="alt text" width="600">
 </div>
 
+<img src="Threat Detection with GuardDuty/GuardDuty Findings-1.png" alt="GuardDuty finding example" width="500">
+
 
 ### Introduction of Tools and concepts
 
