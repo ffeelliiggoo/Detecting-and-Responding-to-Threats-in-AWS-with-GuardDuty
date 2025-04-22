@@ -822,7 +822,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p>This hands-on test shows how GuardDuty adds another layer of protection by automatically monitoring for malicious files stored in your cloud environment.</p>
 
- <img src="Threat Detection with GuardDuty/Malware protection.png" alt="GuardDuty finding example" width="400">
+ <img src="Threat Detection with GuardDuty/Malware protection.png" alt="GuardDuty finding example" width="200">
 
 
   <h4>🔧 Enable Malware Protection</h4>
