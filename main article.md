@@ -14,8 +14,6 @@ This hands-on project immerses you in the dual roles of both an attacker and a d
 
 By the end, you’ll gain practical experience in discovering and exploiting web vulnerabilities, then pivot into analyzing those threats using Amazon GuardDuty. It's an excellent simulation for professionals in roles such as Security Analyst, Penetration Tester, or Cloud Security Engineer—where understanding exploit techniques, cloud misconfigurations, and detection strategies is critical.
 
-
-
 ---
 
 ### Project Setup
@@ -29,8 +27,9 @@ By the end, you’ll gain practical experience in discovering and exploiting web
 * Implement malware protection to safeguard your data.
 
 <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-  <img src="architecture-complete.png" alt="alt text" width="600">
+  <img src="Threat Detection with GuardDuty/architecture-complete.png" alt="GuardDuty finding example" width="700">
 </div>
+
 
 #####
 
