@@ -5,7 +5,6 @@
 > ### Subtopic: Securing S3 and EC2 Against > Credential Theft & Malware
 > **Author:** Felipe Gonzalez  
 
-
 <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
   <img src="GuardDuty Findings-1.png" alt="alt text" width="600">
 </div>
