@@ -75,7 +75,7 @@ Throughout this project, the importance of the principle of least privilege, con
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/web deployment process.png" alt="alt text" width="700">
+    <img src="Threat Detection with GuardDuty/web deployment process.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -361,7 +361,7 @@ Yup, you guessed it. You're the web app host, since you're the one that deployed
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="run malicious code.png" alt="alt text" width="300">
+    <img src="Threat Detection with GuardDuty/run malicious code.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -560,7 +560,7 @@ You’ll use **AWS CloudShell** to simulate the attacker, leveraging the stolen 
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Steal data.png" alt="alt text" width="10000">
+    <img src="Threat Detection with GuardDuty/Steal data.png" alt="alt text" width="10000">
   </div>
 </div>
 
@@ -585,7 +585,7 @@ You’ll use **AWS CloudShell** to simulate the attacker, leveraging the stolen 
 <div style="border: 1px solid #ddd; padding: 16px; border-radius: 8px; background: #f9f9f9; margin-top: 20px;">
   <h3>📦 Set Your S3 Bucket Environment Variable</h3>
 
-  <img src="setting enviroment variable.png" alt="S3 Bucket Variable" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
+  <img src="Threat Detection with GuardDuty/setting enviroment variable.png" alt="S3 Bucket Variable" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
 
   <p><strong>💡 Why this matters:</strong> Environment variables make your commands cleaner and reusable. In this case, you’ll store the name of the S3 bucket that holds sensitive app data.</p>
 
@@ -610,9 +610,9 @@ You’ll use **AWS CloudShell** to simulate the attacker, leveraging the stolen 
 
   <p>🔍 In your environment, the S3 bucket name can be found in the S3 bucket list or the ARN. Check the example below:</p>
 
-  <img src="S3 ARN.png" alt="S3 ARN example" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
+  <img src="Threat Detection with GuardDuty/S3 ARN.png" alt="S3 ARN example" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
 
-  <img src="S3 bucket variable.png" alt="S3 bucket variable highlighted" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
+  <img src="Threat Detection with GuardDuty/S3 bucket variable.png" alt="S3 bucket variable highlighted" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
 
   <p><strong>💡 Tip:</strong> Setting this variable helps you reuse the bucket name easily in future commands.</p>
 
@@ -633,7 +633,7 @@ You’ll use **AWS CloudShell** to simulate the attacker, leveraging the stolen 
 <div style="border: 1px solid #ddd; padding: 16px; border-radius: 8px; background: #f9f9f9; margin-top: 20px;">
   <h4>🕵️‍♂️ Extract and View Stolen IAM Credentials</h4>
 
-  <img src="download credentials.png" alt="Download credentials" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
+  <img src="Threat Detection with GuardDuty/download credentials.png" alt="Download credentials" style="max-width: 100%; border-radius: 4px; margin-bottom: 12px;" />
 
   <p><strong>💡 Note:</strong> Use the <code>JUICESHOPURL</code> variable to simplify the command.</p>
 
@@ -655,7 +655,7 @@ You’ll use **AWS CloudShell** to simulate the attacker, leveraging the stolen 
 
 You should see what's inside the credentials.json file, which are the credentials we stole through the web app!
 
-  <img src="credentials.png" alt="Displayed credentials" style="max-width: 100%; border-radius: 4px; margin-top: 16px;" />
+  <img src="Threat Detection with GuardDuty/credentials.png" alt="Displayed credentials" style="max-width: 100%; border-radius: 4px; margin-top: 16px;" />
 </div>
 
 <!-- sample code of good block 1 -->
@@ -673,7 +673,7 @@ You should see what's inside the credentials.json file, which are the credential
   <p><strong>💡 Why create a new profile?</strong><br>
   In this case, we’re setting up a new profile named <code>stolen</code> using credentials extracted from the vulnerable web app. This simulates how an attacker might use exposed credentials from another environment.</p>
 
-  <img src="configure CLI profile.png" alt="Configure CLI Profile" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
+  <img src="Threat Detection with GuardDuty/configure CLI profile.png" alt="Configure CLI Profile" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
 
   <p>Use the commands below to configure the profile:</p>
 
@@ -777,12 +777,12 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 #### Here we can verify that the GuardDuty dashboard has picked up on 2 High findings from the same source.
 
 
-  <img src="GuardDuty Findings-2.png" alt="GuardDuty Alert Screenshot" style="max-width: 100%; border-radius: 4px; margin-bottom: 16px;" />
+  <img src="Threat Detection with GuardDuty/GuardDuty Findings-2.png" alt="GuardDuty Alert Screenshot" style="max-width: 100%; border-radius: 4px; margin-bottom: 16px;" />
 
   <h3>🛡️ GuardDuty Finding: EC2 Credential Misuse</h3>
   <p>GuardDuty successfully detected that the EC2 instance role <code>vulnerablewebapp-TheRole-6yiHfFZ30fjZ</code> was used by another AWS account—proof that our credential exfiltration attack worked.</p>
 
-  <img src="incident details.png" alt="Incident Detail Screenshot" style="max-width: 100%; border-radius: 4px; margin: 20px 0;" />
+  <img src="Threat Detection with GuardDuty/incident details.png" alt="Incident Detail Screenshot" style="max-width: 100%; border-radius: 4px; margin: 20px 0;" />
 
   <h4>📌 Key Details:</h4>
   <ul style="line-height: 1.6;">
