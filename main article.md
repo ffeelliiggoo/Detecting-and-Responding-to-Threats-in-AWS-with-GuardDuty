@@ -454,7 +454,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/chnaged on username.png" alt="alt text" width="900">
+    <img src="Threat Detection with GuardDuty/chnaged on username.png" alt="alt text" width="500">
   </div>
 </div>
 
