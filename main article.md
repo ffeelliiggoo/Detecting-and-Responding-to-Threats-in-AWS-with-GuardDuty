@@ -10,9 +10,9 @@
 ### Introduction of Tools and concepts
 
 🛡️ Project Overview
-This hands-on project immerses you in the dual roles of both an attacker and a defender, giving you a realistic perspective on how cyberattacks unfold against cloud-hosted web applications—and how to detect and respond to them effectively.
+This hands-on project immerses you in the dual roles of both an attacker and a defender, giving you a realistic perspective on how cyberattacks unfold against cloud-hosted web applications and how to detect and respond to them effectively.
 
-By the end, you’ll gain practical experience in discovering and exploiting web vulnerabilities, then pivot into analyzing those threats using Amazon GuardDuty. It's an excellent simulation for professionals in roles such as Security Analyst, Penetration Tester, or Cloud Security Engineer—where understanding exploit techniques, cloud misconfigurations, and detection strategies is critical.
+By the end, you’ll gain practical experience in discovering and exploiting web vulnerabilities, then pivot into analyzing those threats using Amazon GuardDuty. It's an excellent simulation for professionals in roles such as Security Analyst, Penetration Tester, or Cloud Security Engineer, where understanding exploit techniques, cloud misconfigurations, and detection strategies is critical.
 
 ---
 
@@ -39,10 +39,10 @@ By the end, you’ll gain practical experience in discovering and exploiting web
 
 Before diving into the hands-on activities, it’s important to understand the value of this project and how it connects to real-world cloud security practices.
 
-The web application used in this project is [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) — an intentionally vulnerable e-commerce platform developed by the OWASP Foundation. It’s loaded with real-world security issues from the [**OWASP Top Ten**](https://owasp.org/www-project-top-ten/), such as injection flaws, broken access control, and sensitive data exposure. This makes it an ideal, safe environment for simulating real attacks and learning how to detect and respond to them.
+The web application used in this project is [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)  This is an intentionally vulnerable e-commerce platform developed by the OWASP Foundation. It’s loaded with real-world security issues from the [**OWASP Top Ten**](https://owasp.org/www-project-top-ten/), such as injection flaws, broken access control, and sensitive data exposure. This makes it an ideal, safe environment for simulating real attacks and learning how to detect and respond to them.
 
 In this project, you’ll step into the shoes of both attacker and defender:
-- You'll simulate threats such as **port scanning**, **unauthorized access attempts**, and **IAM credential misuse** — behaviors often seen in real-world breaches.
+- You'll simulate threats such as **port scanning**, **unauthorized access attempts**, and **IAM credential misuse** behaviors often seen in real-world breaches.
 - Then, using **Amazon GuardDuty**, AWS’s intelligent threat detection service, you’ll observe how these actions are flagged, classified, and prioritized.
 
 ### 🔍 What You'll Practice
@@ -56,7 +56,7 @@ In this project, you’ll step into the shoes of both attacker and defender:
 - 🧠 Use machine learning, anomaly detection, and threat intelligence to spot unusual activity.
 
 ✅ Security Best Practices
-Throughout this project, the importance of the principle of least privilege, consistent monitoring, and quick detection became clear. Your next mission: extend these practices organization-wide—enabling GuardDuty by default, reviewing permissions frequently, and validating controls through continuous testing.
+Throughout this project, the importance of the principle of least privilege, consistent monitoring, and quick detection became clear. Your next mission: extend these practices organization-wide enabling GuardDuty by default, reviewing permissions frequently, and validating controls through continuous testing.
 
 #
 <div style="width: 100%; text-align: center; border-bottom: 1px solid #ccc; line-height: 0.1em; margin: 40px 0 20px;">
@@ -397,7 +397,7 @@ Option 2: Javascript code block: (PDF version)
 > &nbsp;
 > 💡 **Why are we entering code in the Username field?**
 >
-> Imagine asking someone for their name—but instead, they hand you instructions to unlock your phone and give it to them. That's essentially what happens during **command injection** on the admin portal of our web app.
+> Imagine asking someone for their name but instead, they hand you instructions to unlock your phone and give it to them. That's essentially what happens during **command injection** on the admin portal of our web app.
 >
 > This is a **serious security vulnerability** where the server misinterprets input data as executable commands. The web app expected a username, but instead received a script that steals **IAM credentials** from the EC2 instance it's running on.
 >
@@ -407,7 +407,7 @@ Option 2: Javascript code block: (PDF version)
 >
 > 💡 **Why does this vulnerability exist?**
 >
-> The core issue lies in the app’s failure to **sanitize input**. Input sanitization ensures user-submitted data is treated as plain text—not executable code.
+> The core issue lies in the app’s failure to **sanitize input**. Input sanitization ensures user-submitted data is treated as plain text not executable code.
 >
 > Without sanitization, attackers can inject malicious commands, which the server then unknowingly executes.
 >
@@ -421,7 +421,7 @@ Option 2: Javascript code block: (PDF version)
 >
 > 
 > 1. <code style="color: red;">CREDURL=http://169.254.169.254/latest/meta-data/iam/security-credentials/</code>  
->    This sets up an address pointing to the **EC2 instance metadata service**—a local-only AWS service that contains sensitive info like IAM credentials. By injecting this into the app, you're instructing the EC2 instance to expose its own secrets.
+>    This sets up an address pointing to the **EC2 instance metadata service** a local-only AWS service that contains sensitive info like IAM credentials. By injecting this into the app, you're instructing the EC2 instance to expose its own secrets.
 > 
 > 2. <code style="color: red;">TOKEN=\curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"</code>  
 >    This line retrieves a **session token** to access the metadata service. The token acts as temporary authorization for the next call, simulating the app’s internal process.
@@ -430,7 +430,7 @@ Option 2: Javascript code block: (PDF version)
 >    This powerful line chains multiple commands to request IAM credentials from the EC2 metadata service and format them. It impersonates legitimate access using the token, then fetches each credential path individually.
 > 
 > 4. <code style="color: red;">echo $CRED | json_pp &gt;frontend/dist/frontend/assets/public/credentials.json</code>  
->    The output (the credentials) is saved into a publicly accessible file in the web server’s asset folder. **Anyone visiting the site can now access sensitive AWS credentials**—a massive security breach.
+>    The output (the credentials) is saved into a publicly accessible file in the web server’s asset folder. **Anyone visiting the site can now access sensitive AWS credentials** a massive security breach.
 > 
 > ---
 > 
@@ -469,7 +469,7 @@ Option 2: Javascript code block: (PDF version)
 >
 > Normally, the username should display a simple string. But instead, it’s showing **`[object Object]`**, which is how JavaScript represents a full object when it’s coerced into a string.
 >
-> In other words, your script created a new JavaScript object (the **IAM credentials**) and when the app tried to display it as text—it just showed `[object Object]`.
+> In other words, your script created a new JavaScript object (the **IAM credentials**) and when the app tried to display it as text it just showed `[object Object]`.
 >
 > This confirms that the injected code worked, and the server responded by storing the AWS credentials in a JSON object, as instructed.
 > &nbsp;
@@ -541,13 +541,13 @@ Option 2: Javascript code block: (PDF version)
 
 💥 **Time for the final move: Data Exfiltration!**
 
-Now that you've captured the stolen credentials, it’s time to stay in full 😈 *hacker mode* 😈 and pull off one last trick—stealing sensitive data stored in the victim’s AWS environment!
+Now that you've captured the stolen credentials, it’s time to stay in full 😈 *hacker mode* 😈 and pull off one last trick stealing sensitive data stored in the victim’s AWS environment!
 
 You’ll use **AWS CloudShell** to simulate the attacker, leveraging the stolen IAM credentials to run commands that access the web app host’s **S3 bucket**. These credentials have enough permissions to read private files, so in just a few steps, you’ll have access to secret data stored in the cloud.
 
 > &nbsp;
 > 🛡️ **Wait... am I actually hacking something real?**  
-> Don’t worry—this is all happening in a safe, self-contained environment. You’re the one who deployed this web app using CloudFormation back in Step 1. That means the S3 bucket and all the resources belong to your own AWS account.
+> Don’t worry this is all happening in a safe, self-contained environment. You’re the one who deployed this web app using CloudFormation back in Step 1. That means the S3 bucket and all the resources belong to your own AWS account.
 >
 > This simulation is designed for learning purposes only. You’re not accessing anyone else’s data but just the data already deployed to the ***OWASP Juice Shop.***
 > &nbsp;
@@ -572,12 +572,12 @@ You’ll use **AWS CloudShell** to simulate the attacker, leveraging the stolen 
 >  
 > Since you're both the app owner and the attacker in this project, simulating an outsider is tricky.  
 >  
-> The solution? Use **AWS CloudShell**. CloudShell runs under a temporary AWS account ID, different from your own. So when you use stolen EC2 credentials inside CloudShell, it appears as if a *different* account is accessing your environment—just like a real attacker.  
+> The solution? Use **AWS CloudShell**. CloudShell runs under a temporary AWS account ID, different from your own. So when you use stolen EC2 credentials inside CloudShell, it appears as if a *different* account is accessing your environment just like a real attacker.  
 >  
 > This behavior is suspicious, and **GuardDuty will flag it.**  
 >  
 > **Why doesn't GuardDuty flag my regular CloudShell use?**  
-> Because normally you're using your IAM user's permissions. In this simulation, you're using stolen credentials to access EC2 resources—behavior that breaks the norm and triggers GuardDuty.
+> Because normally you're using your IAM user's permissions. In this simulation, you're using stolen credentials to access EC2 resources behavior that breaks the norm and triggers GuardDuty.
 > &nbsp;
 
 ##### 2. Save an environment variable for the Juice Shop URL.
@@ -738,9 +738,9 @@ aws configure set profile.stolen.aws_session_token $(cat credentials.json | jq -
     <li>📄 Successfully accessed and revealed the contents of a secret file meant to be private.</li>
   </ul>
 
-  <p><strong>🎯 Outcome:</strong> You’ve completed a full-cycle cloud credential exfiltration and data breach simulation—demonstrating how vulnerable applications can expose entire cloud environments when left unprotected.</p>
+  <p><strong>🎯 Outcome:</strong> You’ve completed a full-cycle cloud credential exfiltration and data breach simulation demonstrating how vulnerable applications can expose entire cloud environments when left unprotected.</p>
 
-  <p style="margin-top: 12px;"><strong>🔐 Now it's time to switch hats—</strong> from attacker back to defender, and see if <strong>Amazon GuardDuty</strong> caught your moves...</p>
+  <p style="margin-top: 12px;"><strong>🔐 Now it's time to switch hats </strong> from attacker back to defender, and see if <strong>Amazon GuardDuty</strong> caught your moves...</p>
 </div>
 
 
@@ -756,7 +756,7 @@ aws configure set profile.stolen.aws_session_token $(cat credentials.json | jq -
 
 #### 🛡️ Switch to Defender Mode – Detect the Attack with GuardDuty
 
-The attack on your web app is complete — you've explored how vulnerabilities can be exploited. Now it’s time to flip the script.
+The attack on your web app is complete you've explored how vulnerabilities can be exploited. Now it’s time to flip the script.
 
 As the engineer who deployed this web app, you're stepping out of hacker mode and into your role as a defender. Your mission now is to investigate whether **Amazon GuardDuty** detected the suspicious activity triggered during the attack.
 
@@ -780,7 +780,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   <img src="Threat Detection with GuardDuty/GuardDuty Findings-2.png" alt="GuardDuty Alert Screenshot" style="max-width: 100%; border-radius: 4px; margin-bottom: 16px;" />
 
   <h3>🛡️ GuardDuty Finding: EC2 Credential Misuse</h3>
-  <p>GuardDuty successfully detected that the EC2 instance role <code>vulnerablewebapp-TheRole-6yiHfFZ30fjZ</code> was used by another AWS account—proof that our credential exfiltration attack worked.</p>
+  <p>GuardDuty successfully detected that the EC2 instance role <code>vulnerablewebapp-TheRole-6yiHfFZ30fjZ</code> was used by another AWS account proof that our credential exfiltration attack worked.</p>
 
   <img src="Threat Detection with GuardDuty/incident details.png" alt="Incident Detail Screenshot" style="max-width: 100%; border-radius: 4px; margin: 20px 0;" />
 
@@ -795,7 +795,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
     <li><strong>Detection Time:</strong> ~5 minutes after first access</li>
   </ul>
 
-  <p>✅ This confirms GuardDuty is working correctly—detecting threats like stolen credentials being used inappropriately across AWS accounts.</p>
+  <p>✅ This confirms GuardDuty is working correctly detecting threats like stolen credentials being used inappropriately across AWS accounts.</p>
 </div>
 
 
@@ -815,7 +815,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <ul>
     <li>✅ Enable <strong>Malware Protection</strong> for your S3 bucket in the GuardDuty console.</li>
-    <li>📄 Upload a safe <strong>EICAR test file</strong> — a harmless file commonly used to simulate malware.</li>
+    <li>📄 Upload a safe <strong>EICAR test file</strong> a harmless file commonly used to simulate malware.</li>
     <li>🛡️ Wait for GuardDuty to scan and flag the file as suspicious.</li>
     <li>🔍 Review the finding to see how GuardDuty identifies and classifies malware threats.</li>
   </ul>
@@ -843,7 +843,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   <p><strong>➡️ File:</strong> <code>EICAR-test-file.txt</code></p>
 
   <p><strong>💡 What's an EICAR file?</strong><br>
-  It's a harmless test file used to simulate malware and test antivirus responses — without using an actual virus. GuardDuty should detect and report it as malicious once uploaded.</p>
+  It's a harmless test file used to simulate malware and test antivirus responses, without using an actual virus. GuardDuty should detect and report it as malicious once uploaded.</p>
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
@@ -866,7 +866,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <ul>
     <li>✅ Enable <strong>Malware Protection</strong> for your S3 bucket in the GuardDuty console.</li>
-    <li>📄 Upload a safe <strong>EICAR test file</strong> — a harmless file commonly used to simulate malware.</li>
+    <li>📄 Upload a safe <strong>EICAR test file</strong> a harmless file commonly used to simulate malware.</li>
     <li>🛡️ Wait for GuardDuty to scan and flag the file as suspicious.</li>
     <li>🔍 Review the finding to see how GuardDuty identifies and classifies malware threats.</li>
   </ul>
@@ -895,7 +895,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   <p><strong>➡️ File:</strong> <code>EICAR-test-file.txt</code></p>
 
   <p><strong>💡 What's an EICAR file?</strong><br>
-  It's a harmless test file used to simulate malware and test antivirus responses — without using an actual virus. GuardDuty should detect and report it as malicious once uploaded.</p>
+  It's a harmless test file used to simulate malware and test antivirus responses, without using an actual virus. GuardDuty should detect and report it as malicious once uploaded.</p>
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
