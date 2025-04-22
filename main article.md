@@ -822,7 +822,8 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p>This hands-on test shows how GuardDuty adds another layer of protection by automatically monitoring for malicious files stored in your cloud environment.</p>
 
-  <img src="Threat Detection with GuardDuty/Malware protection.png" alt="Malware Protection Overview" style="max-width: 50%; border-radius: 4px; margin: 16px 0;" />
+ <img src="Threat Detection with GuardDuty/Malware protection.png" alt="GuardDuty finding example" width="600">
+
 
 
   <h4>🔧 Enable Malware Protection</h4>
@@ -912,3 +913,9 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 ### Project reflection
 
 I completed this project in approximately 2–3 hours, including setup, testing, and analyzing GuardDuty findings.
+
+The conclusion of the post "Detecting and Responding to Threats in AWS with GuardDuty" emphasizes that Amazon GuardDuty is a powerful, fully managed threat detection service that significantly enhances the security posture of AWS environments. The article highlights that GuardDuty provides continuous, intelligent monitoring for suspicious activity and potential threats by leveraging advanced machine learning, anomaly detection, and integrated threat intelligence. This enables organizations to detect threats such as unauthorized access, credential misuse, and data exfiltration quickly and efficiently.
+
+The post also stresses the importance of integrating GuardDuty findings into automated response workflows, such as using AWS Lambda and Security Hub, to accelerate incident response and reduce manual intervention. By doing so, security teams can respond to threats in real time, minimizing potential damage and maintaining compliance.
+
+In summary, the article concludes that enabling and properly configuring GuardDuty is a critical step for any organization using AWS. It not only provides robust threat detection but also streamlines incident response, making it an essential component of a comprehensive AWS security strategy. The post encourages readers to leverage GuardDuty’s capabilities to proactively protect their cloud resources and data.
