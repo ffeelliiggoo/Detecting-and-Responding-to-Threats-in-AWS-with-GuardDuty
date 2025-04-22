@@ -5,7 +5,7 @@
 > ### Subtopic: Securing S3 and EC2 Against > Credential Theft & Malware
 > **Author:** Felipe Gonzalez  
 
-<img src="Threat Detection with GuardDuty/GuardDuty Findings-1.png" alt="GuardDuty finding example" width="700">
+<img src="Threat Detection with GuardDuty/GuardDuty Findings-1.png" alt="GuardDuty finding example" width="1300">
 
 ### Introduction of Tools and concepts
 
