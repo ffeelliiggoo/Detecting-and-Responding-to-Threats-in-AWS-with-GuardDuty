@@ -119,7 +119,7 @@ Under Stack failure options, both settings are Activated.
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/site output-1.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/site output-1.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -263,7 +263,7 @@ Then, we'll enter 😈 hacker mode 😈 and see whether we can hack our way into
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Web app location.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/Web app location.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -275,7 +275,7 @@ Then, we'll enter 😈 hacker mode 😈 and see whether we can hack our way into
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="site output-2.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/site output-2.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -298,7 +298,7 @@ Welcome to the OWASP Juice Shop! This is the web app you've deployed with your C
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="SQL injection view.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/SQL injection view.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -317,7 +317,7 @@ Pretend that, as a hacker, you've visited the OWASP Juice Shop web app and decid
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="SQL injection.png" alt="alt text" width="300">
+    <img src="Threat Detection with GuardDuty/SQL injection.png" alt="alt text" width="600">
   </div>
 </div>
 
@@ -325,7 +325,7 @@ Pretend that, as a hacker, you've visited the OWASP Juice Shop web app and decid
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="SQL Injection Success Attack Attempt.png" alt="alt text" width="800">
+    <img src="Threat Detection with GuardDuty/SQL Injection Success Attack Attempt.png" alt="alt text" width="800">
   </div>
 </div>
 
@@ -369,10 +369,6 @@ Yup, you guessed it. You're the web app host, since you're the one that deployed
 
 
 
-
-
-
-
 ### Conduct command injection using the following code:
 
 Option 1: Markdown ready to copy.
@@ -392,7 +388,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="username location.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/username location.png" alt="alt text" width="800">
   </div>
 </div>
 
@@ -448,7 +444,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="command injection profile view.png" alt="alt text" width="500">
+    <img src="Threat Detection with GuardDuty/command injection profile view.png" alt="alt text" width="700">
   </div>
 </div>
 
@@ -458,7 +454,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="chnaged on username.png" alt="alt text" width="500">
+    <img src="Threat Detection with GuardDuty/chnaged on username.png" alt="alt text" width="700">
   </div>
 </div>
 
@@ -521,7 +517,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="credential JSON file.png" alt="alt text" width="10000">
+    <img src="Threat Detection with GuardDuty/credential JSON file.png" alt="alt text" width="10000">
   </div>
 </div>
 
