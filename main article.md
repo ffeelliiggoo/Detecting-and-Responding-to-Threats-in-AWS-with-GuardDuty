@@ -237,7 +237,7 @@ Your stack's status should say CREATE_COMPLETE now
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/create_complete.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/create_complete.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -263,7 +263,7 @@ Then, we'll enter 😈 hacker mode 😈 and see whether we can hack our way into
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/Web app location.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/Web app location.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -275,7 +275,7 @@ Then, we'll enter 😈 hacker mode 😈 and see whether we can hack our way into
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/site output-2.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/site output-2.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -298,7 +298,7 @@ Welcome to the OWASP Juice Shop! This is the web app you've deployed with your C
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/SQL injection view.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/SQL injection view.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -317,7 +317,7 @@ Pretend that, as a hacker, you've visited the OWASP Juice Shop web app and decid
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/SQL injection.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/SQL injection.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -325,7 +325,7 @@ Pretend that, as a hacker, you've visited the OWASP Juice Shop web app and decid
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/SQL Injection Success Attack Attempt.png" alt="alt text" width="800">
+    <img src="Threat Detection with GuardDuty/SQL Injection Success Attack Attempt.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -349,7 +349,7 @@ Yup, you guessed it. You're the web app host, since you're the one that deployed
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/arbitrary code execution.png" alt="alt text" width="800">
+    <img src="Threat Detection with GuardDuty/arbitrary code execution.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -361,7 +361,7 @@ Yup, you guessed it. You're the web app host, since you're the one that deployed
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/run malicious code.png" alt="alt text" width="600">
+    <img src="Threat Detection with GuardDuty/run malicious code.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -388,7 +388,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/username location.png" alt="alt text" width="800">
+    <img src="Threat Detection with GuardDuty/username location.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -444,7 +444,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/command injection profile view.png" alt="alt text" width="700">
+    <img src="Threat Detection with GuardDuty/command injection profile view.png" alt="alt text" width="900">
   </div>
 </div>
 
@@ -454,7 +454,7 @@ Option 2: Javascript code block: (PDF version)
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/chnaged on username.png" alt="alt text" width="700">
+    <img src="Threat Detection with GuardDuty/chnaged on username.png" alt="alt text" width="900">
   </div>
 </div>
 
