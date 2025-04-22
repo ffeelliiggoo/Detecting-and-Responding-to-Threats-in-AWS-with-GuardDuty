@@ -167,7 +167,7 @@ Let's learn how they work together to make up a web app.
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/site architecture.png" alt="alt text" width="700">
+    <img src="Threat Detection with GuardDuty/site architecture.png" alt="alt text" width="550">
   </div>
 </div>
 
