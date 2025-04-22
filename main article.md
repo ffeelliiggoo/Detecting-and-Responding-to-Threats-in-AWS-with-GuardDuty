@@ -325,7 +325,7 @@ Pretend that, as a hacker, you've visited the OWASP Juice Shop web app and decid
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/SQL Injection Success Attack Attempt.png" alt="alt text" width="900">
+    <img src="Threat Detection with GuardDuty/SQL Injection Success Attack Attempt.png" alt="alt text" width="700">
   </div>
 </div>
 
@@ -361,7 +361,7 @@ Yup, you guessed it. You're the web app host, since you're the one that deployed
 
 <div style="text-align: center;">
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block;">
-    <img src="Threat Detection with GuardDuty/run malicious code.png" alt="alt text" width="900">
+    <img src="Threat Detection with GuardDuty/run malicious code.png" alt="alt text" width="600">
   </div>
 </div>
 
