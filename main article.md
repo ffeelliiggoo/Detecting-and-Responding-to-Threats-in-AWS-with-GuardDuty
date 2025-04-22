@@ -718,7 +718,7 @@ aws configure set profile.stolen.aws_session_token $(cat credentials.json | jq -
   <p>📄 You should see a line that reads:<br>
   <em>"Dang it - if you can see this text, you're accessing our private information!"</em></p>
 
-  <img src="final move.png" alt="View Secret Information" style="max-width: 100%; border-radius: 4px; margin-top: 16px;" />
+  <img src="Threat Detection with GuardDuty/final move.png" alt="View Secret Information" style="max-width: 100%; border-radius: 4px; margin-top: 16px;" />
 </div>
 
 
@@ -777,7 +777,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 #### Here we can verify that the GuardDuty dashboard has picked up on 2 High findings from the same source.
 
 
-  <img src="Threat Detection with GuardDuty/GuardDuty Findings-2.png" alt="GuardDuty Alert Screenshot" style="max-width: 100%; border-radius: 4px; margin-bottom: 16px;" />
+  <img src="Threat Detection with GuardDuty/Threat Detection with GuardDuty/GuardDuty Findings-2.png" alt="GuardDuty Alert Screenshot" style="max-width: 100%; border-radius: 4px; margin-bottom: 16px;" />
 
   <h3>🛡️ GuardDuty Finding: EC2 Credential Misuse</h3>
   <p>GuardDuty successfully detected that the EC2 instance role <code>vulnerablewebapp-TheRole-6yiHfFZ30fjZ</code> was used by another AWS account—proof that our credential exfiltration attack worked.</p>
@@ -822,7 +822,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p>This hands-on test shows how GuardDuty adds another layer of protection by automatically monitoring for malicious files stored in your cloud environment.</p>
 
-  <img src="Malware protection.png" alt="Malware Protection Overview" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
+  <img src="Threat Detection with GuardDuty/Malware protection.png" alt="Malware Protection Overview" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
 
   <h4>🔧 Enable Malware Protection</h4>
   <p>Enable Malware Protection for S3 in GuardDuty for your web app's S3 bucket.</p>
@@ -834,7 +834,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   - Before <strong>June 11, 2025</strong>: Free for all accounts until June 15, 2025.<br>
   - After <strong>June 11, 2025</strong>: Free only for accounts less than 12 months old. Otherwise, charges may apply.</p>
 
-  <img src="Enabled malware protection-1.png" alt="Enabled Malware Protection Screenshot" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
+  <img src="Threat Detection with GuardDuty/Enabled malware protection-1.png" alt="Enabled Malware Protection Screenshot" style="max-width: 100%; border-radius: 4px; margin: 16px 0;" />
 
   <h4>📥 Upload Malware File</h4>
   <p>To verify that Malware Protection is working, upload the following test file to your S3 bucket:</p>
@@ -846,7 +846,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
 
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
-  <img src="Malware Event.png" alt="Malware Detection Event" style="max-width: 100%; border-radius: 4px; margin-top: 16px;" />
+  <img src="Threat Detection with GuardDuty/Malware Event.png" alt="Malware Detection Event" style="max-width: 100%; border-radius: 4px; margin-top: 16px;" />
 </div>
 
 
@@ -873,7 +873,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   <p>This hands-on test shows how GuardDuty adds another layer of protection by automatically monitoring for malicious files stored in your cloud environment.</p>
 
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block; margin: 16px 0;">
-    <img src="Malware protection.png" alt="Malware Protection Overview" style="max-width: 100%; border-radius: 4px;" />
+    <img src="Threat Detection with GuardDuty/Malware protection.png" alt="Malware Protection Overview" style="max-width: 100%; border-radius: 4px;" />
   </div>
 
   <h4>🔧 Enable Malware Protection</h4>
@@ -887,7 +887,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   - After <strong>June 11, 2025</strong>: Free only for accounts less than 12 months old. Otherwise, charges may apply.</p>
 
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block; margin: 16px 0;">
-    <img src="Enabled malware protection-1.png" alt="Enabled Malware Protection Screenshot" style="max-width: 100%; border-radius: 4px;" />
+    <img src="Threat Detection with GuardDuty/Enabled malware protection-1.png" alt="Enabled Malware Protection Screenshot" style="max-width: 100%; border-radius: 4px;" />
   </div>
 
   <h4>📥 Upload Malware File</h4>
@@ -901,7 +901,7 @@ As the engineer who deployed this web app, you're stepping out of hacker mode an
   <p><em>Tip: EICAR stands for the European Institute for Computer Antivirus Research.</em></p>
 
   <div style="border: 5px solid #f4a261; padding: 5px; display: inline-block; margin-top: 16px;">
-    <img src="Malware Event.png" alt="Malware Detection Event" style="max-width: 100%; border-radius: 4px;" />
+    <img src="Threat Detection with GuardDuty/Malware Event.png" alt="Malware Detection Event" style="max-width: 100%; border-radius: 4px;" />
   </div>
 
 
